@@ -27,6 +27,7 @@ module.exports = {
         { type: 'text', align: 'left', bold: true, fontSize: 16, w: 150, h: 18, x: 63, y: 5, text: 'สมาคมไทยธุรกิจการท่องเที่ยว',},
         { type: 'text', align: 'left', bold: true, fontSize: 14, w: 150, h: 16, x: 63, y: 23, text: 'Association of Thai Travel Agents',},
         { type: 'text', align: 'right', bold: true, fontSize: 16, w: 150, h: 18, x: 650, y: 5, text: 'รายงานค้างชำระ',},
+        { type: 'text', align: 'right', bold: true, fontSize: 14, w: 150, h: 16, x: 650, y: 23, field: 'datehead',},
         { type: 'text', align: 'center', bold: true, fontSize: 14, w: 800, h: 16, x: 0, y: 35, field: 'codename', },
         { type: 'text', align: 'center', bold: true, fontSize: 11, w: 60, h: 10, x: 10, y: 58, text: 'ลำดับ', },
         { type: 'text', align: 'center', bold: true, fontSize: 11, w: 80, h: 10, x: 70, y: 58, text: 'รหัสสมาชิก', },
@@ -47,9 +48,9 @@ module.exports = {
         { type: 'number', align: 'center', fontSize: 10, w: 60, h: 18, lineHeight:0.7, x: 10, y: 0, field: 'no', },
         { type: 'text', align: 'left', fontSize: 10, w: 78, h: 18, lineHeight:0.7, x: 72, y: 0, field: 'mem_code', },
         { type: 'text', align: 'left', fontSize: 10, w: 278, h: 18, lineHeight:0.7, x: 152, y: 0, field: 'name', },
-        { type: 'text', align: 'right', fontSize: 10, w: 78, h: 18, lineHeight:0.7, x: 430, y: 0, field: 'amount', },
-        { type: 'text', align: 'right', fontSize: 10, w: 58, h: 18, lineHeight:0.7, x: 510, y: 0, fiele: 'vat_amount', },
-        { type: 'text', align: 'right', fontSize: 10, w: 68, h: 18, lineHeight:0.7, x: 570, y: 0, field: 'total_amount', },
+        { type: 'number', align: 'right', fontSize: 10, w: 78, h: 18, lineHeight:0.7, x: 430, y: 0, field: 'amount', },
+        { type: 'number', align: 'right', fontSize: 10, w: 58, h: 18, lineHeight:0.7, x: 510, y: 0, field: 'vat_amount', },
+        { type: 'number', align: 'right', fontSize: 10, w: 68, h: 18, lineHeight:0.7, x: 570, y: 0, field: 'total_amount', },
         { type: 'text', align: 'center', fontSize: 10, w: 80, h: 18, lineHeight:0.7, x: 640, y: 0, field: 'code', },
         { type: 'text', align: 'center', fontSize: 10, w: 80, h: 18, lineHeight:0.7, x: 720, y: 0, field: 'issue_date', },
         { type: 'line', x1: 10, x2: 10, y1: 0, y2: 18, lineWidth: 0.5, },
@@ -93,9 +94,9 @@ module.exports = {
         { type: 'line', x1: 640, x2: 640, y1: 0, y2: 18, lineWidth: 0.5, },
         { type: 'line', x1: 150, x2: 640, y1: 18, y2: 18, lineWidth: 1 },
         { type: 'text', align: 'right', fontSize: 10, w: 278, h: 18, lineHeight:0.7, x: 150, y: 0, text: 'รวมยอดเงิน', },
-        { type: 'text', align: 'right', fontSize: 10, w: 78, h: 18, lineHeight:0.7, x: 430, y: 0, field: 'all_amount', },
-        { type: 'text', align: 'right', fontSize: 10, w: 58, h: 18, lineHeight:0.7, x: 510, y: 0, fiele: 'all_vat', },
-        { type: 'text', align: 'right', fontSize: 10, w: 68, h: 18, lineHeight:0.7, x: 570, y: 0, field: 'all_total_amount', },
+        { type: 'number', align: 'right', fontSize: 10, w: 78, h: 18, lineHeight:0.7, x: 430, y: 0, field: 'all_amount', },
+        { type: 'number', align: 'right', fontSize: 10, w: 58, h: 18, lineHeight:0.7, x: 510, y: 0, field: 'all_vat', },
+        { type: 'number', align: 'right', fontSize: 10, w: 68, h: 18, lineHeight:0.7, x: 570, y: 0, field: 'all_total_amount', },
       ]
     }
   ]

@@ -9,7 +9,7 @@ module.exports = {
   session: {
     secret: 'atta_test',
     options: {
-      host: '202.129.206.245',// Host name for database connection.
+      host: process.env.DOCKER ? 'mysql' : '202.129.206.245',// Host name for database connection.
       port: 3306,// Port number for database connection.
       user: 'root',// Database user.
       password: 'atta!4555',// Password for the above database user.
@@ -33,7 +33,7 @@ module.exports = {
     }
   },
   db: {
-      host: '202.129.206.245',// Host name for database connection.
+      host: process.env.DOCKER ? 'mysql' : '202.129.206.245',// Host name for database connection.
       port: 3306,// Port number for database connection.
     schema: 'rapidpass',
     user: 'root',
