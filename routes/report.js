@@ -174,12 +174,12 @@ router.post('/output_tax', [bodyParser.json()], function(req, res) {
     return db.query(sql, param).then(function(rows) {
       if (rows.length > 0) {
         $scope.reportData = rows;
-        console.log($scope.reportData);
+        //console.log($scope.reportData);
         for(var i=0; i<$scope.reportData.length; i++){
           $scope.reportData[i].no = i+1;
         }
       }
-      console.log("report2 = ", $scope.reportData);
+      //console.log("report2 = ", $scope.reportData);
     });
   };
 
@@ -219,6 +219,7 @@ router.post('/output_tax', [bodyParser.json()], function(req, res) {
    // res.redirect('/report/' + $scope.pdfFile);
    console.log("Test Gen Report");
  }).catch(function(e) {
+   console.log(e);
    res.send({
      status:false,
      error:e
